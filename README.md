@@ -188,6 +188,45 @@ bash example/sr_540p/run.sh
 bash example/sr_1080p/run.sh
 ```
 
+## ✍️ Prompt Guidance
+ 
+daVinci-MagiHuman uses an **Enhanced Prompt** system that rewrites user inputs into detailed performance directions optimized for avatar-style video generation. For the full system prompt specification, see [`prompts/enhanced_prompt_design.md`](prompts/enhanced_prompt_design.md).
+
+Below is a quick reference for writing effective prompts.
+
+### Output Structure
+ 
+Every enhanced prompt has **three parts**:
+ 
+1. **Main Body** (150–200 words) — A clinical, chronological description of the character's appearance, facial dynamics, vocal delivery, and static cinematography. Written in English regardless of dialogue language.
+ 
+2. **Dialogue** — Repeats all spoken lines in a structured format:
+   ```
+   Dialogue:
+   <character description, language>: "Line content"
+   ```
+ 
+3. **Background Sound** — Specifies the most prominent ambient sound:
+   ```
+   Background Sound:
+   <Description of the background sound>
+   ```
+   Use `<No prominent background sound>` if none.
+
+### Quick Example
+ 
+**User input:** A man in a yellow shirt says "有的人在一起生活一辈子，还带着假面具呢"
+ 
+**Enhanced prompt (abbreviated):**
+ 
+> A young man with short dark hair, wearing a bright yellow polo shirt, sits stationary. His disposition is earnest and slightly agitated... He speaks with a rapid, emphatic tone, his mouth opening wide as he says, "有 的 人 在 一 起 生 活 一 辈 子，还 带 着 假 面 具 呢..." His brow furrows, lip muscles showing distinct dynamics...
+>
+> Dialogue:
+> \<Young man in yellow polo, Mandarin\>: "有 的 人 在 一 起 生 活 一 辈 子，还 带 着 假 面 具 呢..."
+>
+> Background Sound:
+> \<No prominent background sound\>
+
 ## 🙏 Acknowledgements
 
 We thank the open-source community, and in particular [Wan2.2](https://github.com/Wan-Video/Wan2.2) and [Turbo-VAED](https://github.com/hustvl/Turbo-VAED), for their valuable contributions.
