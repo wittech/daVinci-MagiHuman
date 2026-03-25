@@ -125,7 +125,6 @@ cd ..
 # Clone daVinci-MagiHuman
 git clone https://github.com/GAIR-NLP/daVinci-MagiHuman
 cd daVinci-MagiHuman
-
 ```
 
 If you prefer manual setup, follow Option 2 (Conda) below.
