@@ -107,10 +107,6 @@ Key design choices:
 ```bash
 # Recommended: use the prebuilt MagiHuman image (supports full pipeline including SR 1080p)
 docker pull sandai/magi-human:latest
-# Optional: use the 03/25 updated MagiCompiler image
-# Note: this image does not include magi_attention,
-# so SR 1080p is not supported (other pipelines are available).
-# docker pull sandai/magi-compiler:latest
 
 docker run -it --gpus all --network host --ipc host \
   -v /path/to/repos:/workspace \
@@ -119,8 +115,6 @@ docker run -it --gpus all --network host --ipc host \
   sandai/magi-human:latest \
   bash
 
-# In-container runtime checks
-python -c "import magi_compiler, importlib.util; print('magi_attention:', bool(importlib.util.find_spec('magi_attention')))"
 ```
 
 If you prefer manual setup, follow Option 2 (Conda) below.
@@ -150,6 +144,15 @@ cd ..
 git clone https://github.com/GAIR-NLP/daVinci-MagiHuman
 cd daVinci-MagiHuman
 pip install -r requirements.txt
+pip install --no-deps -r /app/requirements-nodeps.txt
+
+# Optional (only for sr-1080p): Install MagiAttention
+git clone --recursive https://github.com/SandAI-org/MagiAttention.git
+cd MagiAttention
+git checkout v1.0.5
+git submodule update --init --recursive
+pip install -r requirements.txt
+pip install --no-build-isolation .
 ```
 
 ### Download Model Checkpoints
