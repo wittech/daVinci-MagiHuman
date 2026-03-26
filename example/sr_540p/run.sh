@@ -9,7 +9,7 @@ export MASTER_ADDR="${MASTER_ADDR:-localhost}"
 export MASTER_PORT="${MASTER_PORT:-6011}"
 export NNODES="${NNODES:-1}"
 export NODE_RANK="${NODE_RANK:-0}"
-export GPUS_PER_NODE="${GPUS_PER_NODE:-1}"
+export GPUS_PER_NODE="${GPUS_PER_NODE:-2}"
 export WORLD_SIZE="$((GPUS_PER_NODE * NNODES))"
 
 export PYTORCH_CUDA_ALLOC_CONF="${PYTORCH_CUDA_ALLOC_CONF:-expandable_segments:True}"
