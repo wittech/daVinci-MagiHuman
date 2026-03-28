@@ -18,7 +18,7 @@
 [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-HuggingFace-yellow)](https://huggingface.co/GAIR/daVinci-MagiHuman)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.9%2B-ee4c2c.svg)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.10%2B-ee4c2c.svg)](https://pytorch.org/)
 
 </div>
 
@@ -46,8 +46,8 @@ https://github.com/user-attachments/assets/c6cc056f-56ca-4285-80f3-bb6052228d23
 </table>
 <table>
 <tr valign="top">
-<td width="50%"><video src="https://github.com/user-attachments/assets/956d55ce-72cf-4dd4-a29e-ea2c3f725864" controls muted width="100%"></video></td>
-<td width="50%"><video src="https://github.com/user-attachments/assets/7db9db31-617e-44a6-b2df-99d47accba22" controls muted width="100%"></video></td>
+<td width="50%"><video src="https://github.com/user-attachments/assets/800ef0e2-cece-4dc0-9e8f-1524b1c6d326" controls muted width="100%"></video></td>
+<td width="50%"><video src="https://github.com/user-attachments/assets/440bf0b9-6c6a-4482-a9a5-90f56e0c0e4d" controls muted width="100%"></video></td>
 </tr>
 </table>
 
@@ -133,11 +133,12 @@ If you prefer manual setup, follow Option 2 (Conda) below.
 
 ```bash
 # Create environment
-conda create -n davinci python=3.12
-conda activate davinci
+conda create -n davinci-magihuman python=3.12
+conda activate davinci-magihuman
+conda install ffmpeg
 
 # Install PyTorch
-pip install torch==2.9.0 torchvision==0.24.0 torchaudio==2.9.0
+pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
 
 # Install Flash Attention (Hopper)
 git clone https://github.com/Dao-AILab/flash-attention
