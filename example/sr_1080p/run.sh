@@ -39,10 +39,10 @@ DISTRIBUTED_ARGS="--nnodes=${NNODES} --node_rank=${NODE_RANK} --nproc_per_node=$
 torchrun ${DISTRIBUTED_ARGS} inference/pipeline/entry.py \
   --config-load-path example/sr_1080p/config.json \
   --prompt "$(<example/assets/prompt.txt)" \
-  --image_path example/assets/image.png \
-  --seconds 4 \
-  --br_width 448 \
-  --br_height 256 \
+  --image_path /data/input/assets/唐老师_站立_960x548.png \
+  --seconds 20 \
+  --br_width 960 \
+  --br_height 548 \
   --sr_width 1920 \
   --sr_height 1088 \
   --output_path "output_example_sr_1080p_$(date '+%Y%m%d_%H%M%S')" \
