@@ -19,10 +19,14 @@ pydantic-settings
 redis
 redislite
 rich
+numba
+scipy
 sentencepiece
 setuptools>=78.1.1
+soundfile
 timm==1.0.20
 torchao
 transformers==4.56.0
 unfoldNd
 versioningit
+einops

@@ -18,7 +18,7 @@
 [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-HuggingFace-yellow)](https://huggingface.co/GAIR/daVinci-MagiHuman)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.9%2B-ee4c2c.svg)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.10%2B-ee4c2c.svg)](https://pytorch.org/)
 
 </div>
 
@@ -95,7 +95,7 @@ Key design choices:
 
 ## 🚀 Efficient Inference Techniques
 
-- ⚡ **Latent-Space Super-Resolution** — Two-stage pipeline: generate at low resolution, then refine in latent space (not pixel space), avoiding an extra VAE decode-encode round trip.
+- ⚡ **Latent-Space Super-Resolution** — Two-stage pipeline: generate at low resolution, then refine in latent space, avoiding an extra VAE decode-encode round trip.
 - 🔄 **Turbo VAE Decoder** — A lightweight re-trained decoder that substantially reduces decoding overhead.
 - 🔧 **Full-Graph Compilation** — [MagiCompiler](https://github.com/SandAI-org/MagiCompiler) fuses operators across Transformer layers for ~1.2x speedup.
 - 💨 **Distillation** — DMD-2 distillation enables generation with only 8 denoising steps (no CFG), without sacrificing quality.
@@ -133,11 +133,12 @@ If you prefer manual setup, follow Option 2 (Conda) below.
 
 ```bash
 # Create environment
-conda create -n davinci python=3.12
-conda activate davinci
+conda create -n davinci-magihuman python=3.12
+conda activate davinci-magihuman
+conda install ffmpeg
 
 # Install PyTorch
-pip install torch==2.9.0 torchvision==0.24.0 torchaudio==2.9.0
+pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
 
 # Install Flash Attention (Hopper)
 git clone https://github.com/Dao-AILab/flash-attention
