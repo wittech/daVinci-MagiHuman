@@ -1,10 +1,6 @@
 A middle-aged East Asian man with short black hair stands outdoors on a campus, static medium shot, subject centered. He wears a dark navy short-sleeved polo with thin red and white striped trim at the collar and a small white HUST logo on the left chest; the top button is undone. Baseline mood is calm, approachable, quietly assured. Soft natural daylight evenly lights his face; defocused green foliage and a carved stone remain rigid behind him. Torso fixed; only minimal facial micro-motion. From a resting neutral expression, he delivers the opening line with barely perceptible jaw shift in a warm, unhurried voice: "欢 迎 来 到 华 中 科 技 大 学 。" Lips return to near-rest. He then introduces the campus tour with the faintest lateral movement at the mouth corners. He proceeds to describe the campus environment, followed by the library, the cafeteria, and finally extends a warm welcome to prospective students, each segment marked by only the briefest return to near-still neutrality before the next slight lip parting. Eye contact stays level throughout; brows remain still. He occasionally returns to calm near-still neutrality between segments, with the briefest flicker of mild pride across the mid-face. Shoulders level and unmoved. Camera locked; shallow depth of field keeps the face in sharp focus against the blurred background.
 Dialogue:
 <Middle-aged man in navy polo, Mandarin>: "欢 迎 来 到 华 中 科 技 大 学 。"
-<Middle-aged man in navy polo, Mandarin>: "我 为 您 介 绍 校 园 ，请 跟 我 来 。"
-<Middle-aged man in navy polo, Mandarin>: "校 区 绿 化 极 好 ，四 季 常 青 。"
-<Middle-aged man in navy polo, Mandarin>: "图 书 馆 藏 书 丰 富 ，学 术 资 源 一 流 。"
-<Middle-aged man in navy polo, Mandarin>: "食 堂 美 食 云 集 ，价 廉 物 美 。"
-<Middle-aged man in navy polo, Mandarin>: "欢 迎 大 家 报 考 华 中 科 技 大 学 。"
+<Middle-aged man in navy polo, Mandarin>: "如 果 告 诉 你 ， 一 张 轻 飘 飘 的 纸 价 值 百 万 ， 你 敢 信 吗 ？ 在 北 京 、 上 海 这 样 的 超 级 城 市 ， 有 人 为 了 它 排 队 甚 至 熬 白 了 头 ， 有 人 为 了 它 甚 至 愿 意 掏 空 六 个 钱 包 。 这 背 后 到 底 藏 着 什 么 秘 密 ， 能 让 这 张 纸 变 得 比 黄 金 还 贵 ？"
 Background Sound:
 <No prominent background sound>
