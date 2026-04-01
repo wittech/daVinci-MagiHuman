@@ -39,7 +39,7 @@ torchrun ${DISTRIBUTED_ARGS} inference/pipeline/entry.py \
   --config-load-path example/sr_540p/config.json \
   --prompt "$(<example/assets/prompt.txt)" \
   --image_path /data/input/assets/tang1280-720.jpg \
-  --seconds 30 \
+  --seconds 25 \
   --br_width 448 \
   --br_height 256 \
   --sr_width 896 \
