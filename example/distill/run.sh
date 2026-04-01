@@ -38,8 +38,10 @@ torchrun ${DISTRIBUTED_ARGS} inference/pipeline/entry.py \
   --config-load-path example/distill/config.json \
   --prompt "$(<example/assets/prompt.txt)" \
   --image_path /data/input/assets/tang1280-720.jpg \
-  --seconds 20 \
+  --seconds 30 \
   --br_width 448 \
   --br_height 256 \
+  --sr_width 896 \
+  --sr_height 512 \
   --output_path "output_example_distill_$(date '+%Y%m%d_%H%M%S')" \
   2>&1 | tee "log_example_distill_$(date '+%Y%m%d_%H%M%S').log"
