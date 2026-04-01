@@ -497,7 +497,7 @@ class MagiEvaluator:
         videos.mul_(0.5).add_(0.5).clamp_(0, 1)
         videos = [video.cpu() for video in videos]
         videos = [video.permute(1, 2, 3, 0) * 255 for video in videos]
-        videos = [video.numpy().astype(np.uint8) for video in videos]
+        videos = [video.numpy().clip(0, 255).astype(np.uint8) for video in videos]
         return videos
 
     def post_process(self, latent_video: torch.Tensor, latent_audio: torch.Tensor):
