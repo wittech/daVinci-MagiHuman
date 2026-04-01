@@ -13,7 +13,7 @@
     "sr_model_path": "/data/models/daVinci-MagiHuman/540p_sr",
     "sr_num_inference_steps": 5,
     "sr_cfg_number": 1,
-    "use_turbo_vae": true,
+    "use_turbo_vae": false,
     "student_config_path": "/data/models/daVinci-MagiHuman/turbo_vae/TurboV3-Wan22-TinyShallow_7_7.json",
     "student_ckpt_path": "/data/models/daVinci-MagiHuman/turbo_vae/checkpoint-340000.ckpt"
   }
